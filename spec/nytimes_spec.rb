@@ -7,14 +7,14 @@ RSpec.describe Nytimes do
     @hash = Nytimes::DATA
   end
 
-  it 'test_it_can_get_copyright' do
+  it 'test it can get copyright' do
     #Set your code to the local variable, "result"
     result = @hash[:copyright]
 
     expect(result).to eq "Copyright (c) 2018 The New York Times Company. All Rights Reserved."
   end
 
-  it 'test_it_can_get_array_of_stories' do
+  it 'test it can get array of stories' do
     #Set your code to the local variable, "result"
 
     result = @hash[:results]
@@ -23,7 +23,7 @@ RSpec.describe Nytimes do
     expect(result.count).to eq 44
   end
 
-  it 'test_it_can_get_all_stories_with_subsection_of_politics' do
+  it 'test it can get all stories with subsection of politics' do
     #Set your code to the local variable, "result"
 
     results = @hash[:results]
