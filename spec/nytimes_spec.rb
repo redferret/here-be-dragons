@@ -26,9 +26,9 @@ RSpec.describe Nytimes do
   it 'test it can get all stories with subsection of politics' do
     #Set your code to the local variable, "result"
 
-    results = @hash[:results]
-    result = results.find_all do |r|
-      r[:subsection] == 'Politics'
+    stories = @hash[:results]
+    result = stories.find_all do |story|
+      story[:subsection] == 'Politics'
     end
     
     expect(result).to be_an Array
